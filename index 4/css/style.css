@@ -1,0 +1,252 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+/* ------------------------------------------- */
+.card-box {
+	background: #0d5825;
+}
+
+.block-quote {
+	font-size: 25px;
+	font-weight: 600;
+	padding: 30px 0;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 150px;
+}
+
+.block-card {
+	position: relative;
+	width: 100%;
+	min-height: 600px;
+}
+
+.cards {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 150px;
+	margin: 0 auto;
+	transition: .3s;
+}
+
+.heart-card-1 {
+	transform: rotate(-23deg);
+}
+
+.heart-card-1:hover {
+	transform: rotate(-23deg) translateY(-5%);
+}
+
+.heart-card-2 {
+	transform: rotate(-10deg) translate(10%, 4%);
+}
+
+.heart-card-2:hover {
+	transform: rotate(-10deg) translate(10%, -4%);
+}
+
+.heart-card-3 {
+	transform: rotate(7deg) translate(16%, 6%);
+}
+
+.heart-card-3:hover {
+	transform: rotate(7deg) translate(16%, -5%);
+}
+/*=========================================================== */
+.block-box {
+	height: 100vh;
+}
+
+.boxes {
+	min-height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.box1 {
+	position: relative;
+	top: 50%;
+	background: #7e8aeb;
+}
+
+.box2 {
+	position: absolute;
+	background: #ff8888;
+	top: -60%;
+	left: -60%;
+	z-index: -1;
+}
+
+.box3 {
+	position: absolute;
+	background: #4def99;
+	right: -60%;
+	bottom: -60%;
+	z-index: -1;
+}
+/* ----------------------------------------------- */
+.menu-wrapper {
+	min-height: 100vh;
+}
+
+.menu-content {
+	font-size: 25px;
+	padding: 40px 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.menu-content ul li {
+	position: relative;
+	transition: .3s;
+}
+
+.menu-content ul li span {
+	line-height: 2em;
+	cursor: pointer;
+}
+
+.menu-content ul li span:hover {
+	color: #ef9b01;
+}
+
+.menu-content ul li::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 8px;
+	width: 8px;
+	top: 50%;
+	right: 105%;
+	transform: translate(-50%, -50%) scale(2,2) rotate(45deg);
+	background: #ef9b01;
+	border: 0.5px solid #111;
+}
+
+.menu-block {
+	position: relative;
+	min-height: 800px;
+	width: 400px;
+	background: #808080;
+	transition: .7s;
+	transform: translatex(-91%);
+}
+
+.menu-block:hover {
+	transform: translatex(-2%);
+}
+
+.menu-block-two:hover .text-menu {
+	opacity: 0;
+}
+
+.text-menu {
+	position: absolute;
+	right: -50px;
+	bottom: 50%;
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	transform: rotate(90deg);
+	transition: opacity .5s;
+}
+/* =========================================== */
+.animation-box {
+	position: relative;
+	width: 600px;
+	min-height: 600px;
+	margin: 0 auto;
+	border: 1px solid #111;
+}
+
+.animation-boxes {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.box-1 {
+	background: #f51505;
+	animation-name: first-square;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes first-square {
+	25%  {background-color: #1900ff;transform: translatey(500%);}
+	50%  {background-color: #00ff11;transform: translate(500%, 500%);}
+	75%  {background-color: #fcfc00;transform: translate(500%, 0%);}
+	100% {background-color: #f51505;transform: translate(0%, 0%);}
+}
+
+.box-2 {
+	background: #f51505;
+	animation-name: second-square;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes second-square {
+	25%  {background-color: #1900ff;transform: translatey(500%);}
+	50%  {background-color: #00ff11;transform: translate(500%, 500%);}
+	75%  {background-color: #fcfc00;transform: translate(500%, 0%);}
+	100% {background-color: #f51505;transform: translate(0%, 0%);}
+}
+
+.box-3 {
+	background: #f51505;
+	animation-name: third-square;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes third-square {
+	25%  {background-color: #1900ff;transform: translatey(500%);}
+	50%  {background-color: #00ff11;transform: translate(500%, 500%);}
+	75%  {background-color: #fcfc00;transform: translate(500%, 0%);}
+	100% {background-color: #f51505;transform: translate(0%, 0%);}
+}
+
+.box-4 {
+	background: #f51505;
+	animation-name: fourth-square;
+	animation-duration: 4s;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fourth-square {
+	25%  {background-color: #1900ff;transform: translatey(500%);}
+	50%  {background-color: #00ff11;transform: translate(500%, 500%);}
+	75%  {background-color: #fcfc00;transform: translate(500%, 0%);}
+	100% {background-color: #f51505;transform: translate(0%, 0%);}
+}
+

@@ -1,0 +1,46 @@
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+img {
+	display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.element-box {
+	width: 350px;
+	height: 220px;
+	padding: 15px 10px 20px;
+	margin-bottom: 30px;
+	border: 2px dashed rgb(225, 25, 0);
+	background: rgb(0, 225, 26);
+}
+
+.third-level p {
+	font-size: 20px;
+}
+
+.img {
+	width: 25%;
+}
+
+.img-html {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.img-html-css {
+	float: right;
+	margin: 10px 0px 10px 20px;
+	clear: both;
+}

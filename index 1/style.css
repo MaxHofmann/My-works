@@ -1,0 +1,51 @@
+ *{
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header {
+	text-align: center;
+}
+
+section {
+	text-align: left;
+}
+
+footer div ul {
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	align-items: center;
+	list-style: none;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
+div ul li {
+	padding: 20px 20px;
+}
+
+.text {
+	max-width: 760px;
+	text-align: left;
+}
+
+.points li:last-child {
+	color: #ed0000;
+}
+
+footer {
+	background: #c24e63;
+	color: #fff;
+}

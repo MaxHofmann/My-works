@@ -1,0 +1,67 @@
+blockquote {
+	color: #00c853;
+}
+
+a[href^="http"] {
+	color: #d50000;
+}
+
+.list:first-of-type > li:last-child a {
+	background: #00c853;
+}
+
+.holder p:nth-of-type(1) {
+	font-size: 26px;
+}
+
+.text-box h3:first-child{
+	color: #ff4081;
+}
+
+#greycol {
+	color: #9e9e9e;
+}
+
+.text-box div p {
+	color: #d50000;
+}
+
+.text-box p:nth-last-child(2) {
+	color: #7ff000;
+}
+
+.yellow {
+	color: #ffff00;
+}
+
+.bg-box {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: url(../img/lamp.png) top repeat-x, 
+	url(../img/hedgehog.png) left repeat-y, 
+	url(../img/donut.png) right repeat-y ;
+	background-size: 60px;
+}
+
+.bg-box::after {
+	content: url(../img/dom.jpg);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.bg-box::before {
+	content: '';
+	background: url(../img/grass.png) bottom repeat-x;
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	background-size: 300px;
+}
+
+.bg-box {
+	background-color: darkgreen;
+}
